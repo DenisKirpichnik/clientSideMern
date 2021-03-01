@@ -21,7 +21,7 @@ import reducer from "./redux/reducer";
 
 const store = createStore(reducer, composeWithDevTools(applyMiddleware(thunk)));
 //Cool Stuff
-
+// Wow it works
 function App() {
   return (
     <Router>
