@@ -14,17 +14,7 @@ function Store({ store }) {
 
         <div className="store__products">
           <div class="store__row">
-            {store.slice(0, 3).map((product) => {
-              return <StoreProduct key={product.id} {...product} />;
-            })}
-          </div>
-          <div class="store__row">
-            {store.slice(3, 6).map((product) => {
-              return <StoreProduct key={product.id} {...product} />;
-            })}
-          </div>
-          <div class="store__row">
-            {store.slice(6, 9).map((product) => {
+            {store.slice(0, 10).map((product) => {
               return <StoreProduct key={product.id} {...product} />;
             })}
           </div>
