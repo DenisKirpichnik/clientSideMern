@@ -8,7 +8,6 @@ function Paginate({ currentPage, itemsPerPage, totalItems, ...props }) {
   }
   return (
     <nav className="paginate">
-      <h1 className="paginate__header">Pagination</h1>
       <ul className="pagination pagination-sm justify-content-end border-0">
         {pageNumbers.map((num) => {
           let classes = "page__item";

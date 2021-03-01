@@ -25,13 +25,15 @@ function Cart({ cart = [], total, dispatch }) {
         })}
         <hr />
       </div>
-      <div class="cart__sidebar">
-        <h4>
-          Total <span>${total}</span>
-        </h4>
-        <button className="cart__clearAllBtn" onClick={() => dispatch({ type: CLEAR_CART })}>
-          ClEAR CART
-        </button>
+      <div>
+        <div class="cart__sidebar">
+          <h4>
+            Total <span>${total}</span>
+          </h4>
+          <button className="cart__clearAllBtn" onClick={() => dispatch({ type: CLEAR_CART })}>
+            ClEAR CART
+          </button>
+        </div>
       </div>
     </div>
   );

@@ -22,11 +22,13 @@
 }
 
 .cart__items {
-  flex: 0.7;
+  flex: 0.6;
 }
 
 .cart__sidebar {
-  flex: 0.3;
+  top: 0;
+  position: sticky;
+  flex: 0.4;
   margin-top: 10px;
 }
 
@@ -35,7 +37,6 @@
   border-radius: 15px !important;
   color: rgb(255, 255, 255) !important;
   background-color: rgb(240, 85, 85);
-
   border: none;
   padding: 5px;
   width: 130px;
@@ -56,6 +57,8 @@
   }
   .cart__clearAllBtn {
     width: 100px;
+    font-size: 15px;
+    margin-left: -8px;
   }
   .cart__sidebar {
     margin-left: 15px;

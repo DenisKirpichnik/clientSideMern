@@ -97,7 +97,13 @@ function Stuff() {
       {isError == true ? (
         <div className="error__container">{renderError()}</div>
       ) : (
-        <div className="stuff1">
+        <div className="stuff__topPart">
+          <Paginate
+            pageSelected={pageSelected}
+            currentPage={currentPage}
+            itemsPerPage={itemsPerPage}
+            totalItems={data.length}
+          />
           <div className="stuff__searchForm">
             <input
               className="stuff__search"
@@ -111,13 +117,7 @@ function Stuff() {
             </button>
           </div>
 
-          <Paginate
-            pageSelected={pageSelected}
-            currentPage={currentPage}
-            itemsPerPage={itemsPerPage}
-            totalItems={data.length}
-          />
-
+          {/*Rendering gifs */}
           <div className="stuff__grid">{renderGifs()}</div>
         </div>
       )}
